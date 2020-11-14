@@ -68,12 +68,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
-  background-repeat: no-repeat;
-  -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-  background-size: cover;
+  background:  #f8f9fa;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -10277,6 +10272,15 @@ body {
   }
 }
 
+.intro-container {
+  background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  background-size: cover;
+}
+
 .intro-section {
   padding-top: 3rem;
   height: auto;
@@ -10286,7 +10290,7 @@ body {
 }
 
 .process-section {
-  padding: 10rem 0;
+  padding-top: 2rem;
 }
 .process-section .featured-text {
   padding: 2rem;
