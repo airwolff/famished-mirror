@@ -1,948 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<meta charset="utf-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1, shrink-to-fit=no"
-		/>
-		<meta name="description" content="Capstone Project" />
-		<meta name="author" content="Wolff" />
-		<title>famished</title>
-		<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico" />
-		<!-- Font Awesome icons (free version)-->
-		<script
-			src="https://use.fontawesome.com/releases/v5.13.0/js/all.js"
-			crossorigin="anonymous"
-		></script>
-		<!-- Fonts-->
-		<link rel="preconnect" href="https://fonts.gstatic.com" />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap"
-			rel="stylesheet"
-		/>
-		<link rel="stylesheet" href="https://use.typekit.net/ffq2tjo.css" />
-		<!-- Core theme CSS (includes Bootstrap)-->
-		<link href="css/styles.css" rel="stylesheet" />
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script>
+			document.getElementsByTagName("html")[0].className += " js";
+		</script>
+		<link id="codyframe" rel="stylesheet" href="assets/css/style.css" />
+		<!-- Uncomment the script below if you need to support browsers where CSS Variables have not been implemented (e.g., IE11) -->
+		<!-- <script>
+    if(!('CSS' in window) || !CSS.supports('color', 'var(--color-var)')) {var cfStyle = document.getElementById('codyframe');if(cfStyle) {var href = cfStyle.getAttribute('href');href = href.replace('style.css', 'style-fallback.css');cfStyle.setAttribute('href', href);}}
+  </script> -->
+		<title>Malmborgs Gardent Center &amp; Greenhouse</title>
 	</head>
-	<body id="page-top">
-		<!-- Navigation-->
-		<header>
-			<nav
-				class="navbar navbar-expand-lg navbar-light fixed-top"
-				id="mainNav"
-			>
-				<div class="container">
-					<a class="navbar-brand js-scroll-trigger" href="#page-top"
-						>famished</a
-					>
-					<button
-						class="navbar-toggler navbar-toggler-right"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarResponsive"
-						aria-controls="navbarResponsive"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						Menu
+	<body class="margin-0">
+		<!--  START HEADER  -->
+		
+		<header class="padding-sm position-sticky top-0 js-f-header border-bottom border-black bg-accent z-index-3">
+			<div class="f-header__mobile-content container max-width-100%">
+			  <a href="#0" class="f-header__logo">
+				<img width="auto" height="100" src="assets/img/Logo-mobile.png" alt="Malmborg's Mobile Logo">
+			  </a>
+		  
+			  <button class="reset anim-menu-btn js-anim-menu-btn f-header__nav-control js-tab-focus" aria-label="Toggle menu">
+				<i class="anim-menu-btn__icon anim-menu-btn__icon--close" aria-hidden="true"></i>
+			  </button>
+			</div>
+			<div class="f-header__nav add-padding" role="navigation">
+			  <div class="f-header__nav-grid justify-between@md container max-width-100%">
+				<img class="main-logo" width="auto" height="100" src="assets/img/logo.png" alt="Malmborg's Logo">
+				<ul class="f-header__list">
+				  <li class="f-header__item"><a href="#0" class="f-header__link">About Us</a></li>
+				  <li class="f-header__item"><a href="#0" class="f-header__link">Plants</a></li>
+				  <li class="f-header__item"><a href="#0" class="f-header__link">Supplies</a></li>
+				  <li class="f-header__item"><a href="#locations" class="f-header__link js-smooth-scroll" data-duration="300">Locations</a></li>
+				  <li class="f-header__item">
+					<div class="search-input search-input--icon-right radius-lg">
+					  <input class="f-header__form-control search-input__input form-control padding-sm radius-lg" type="search" name="search-input" id="search-input" placeholder="Search...">
+					  <button class="search-input__btn">
+						<svg class="icon" viewBox="0 0 24 24"><title>Search</title><g stroke-linecap="square" stroke-linejoin="miter" stroke-width="2" stroke="currentColor" fill="none" stroke-miterlimit="10"><line x1="22" y1="22" x2="15.656" y2="15.656"></line><circle cx="10" cy="10" r="8"></circle></g></svg>
+					  </button>
+					</div>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </header>
 
-						<i class="fas fa-bars"></i>
-					</button>
-					<div class="collapse navbar-collapse" id="navbarResponsive">
-						<ul class="navbar-nav ml-auto">
-							<li class="nav-item">
-								<a
-									class="nav-link js-scroll-trigger"
-									href="#intro"
-									>Intro</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link js-scroll-trigger"
-									href="#process"
-									>Process</a
-								>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</nav>
-		</header>
-		<!-- circe carousel-->
-		<section class="carousel">
-			<div
-				id="carouselIndicators"
-				class="carousel slide"
-				data-ride="carousel"
-				data-interval="4000"
-				data-pause="hover"
-			>
-				<div class="carousel-inner" role="listbox">
-					<!-- Slide One -->
-					<div class="carousel-item active">
-						<img src="assets/img/circe1.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">First Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Two -->
-					<div class="carousel-item">
-						<img src="assets/img/circe2.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Second Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Three -->
-					<div class="carousel-item">
-						<img src="assets/img/circe3.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Third Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Four -->
-					<div class="carousel-item">
-						<img src="assets/img/circe4.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Fourth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Five -->
-					<div class="carousel-item">
-						<img src="assets/img/circe5.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Fifth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Six -->
-					<div class="carousel-item">
-						<img src="assets/img/circe6.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Sixth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Seven -->
-					<div class="carousel-item">
-						<img src="assets/img/circe7.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">First Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Eight -->
-					<div class="carousel-item">
-						<img src="assets/img/circe8.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Second Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Nine -->
-					<div class="carousel-item">
-						<img src="assets/img/circe9.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Third Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Ten -->
-					<div class="carousel-item">
-						<img src="assets/img/circe10.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Fourth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Eleven -->
-					<div class="carousel-item">
-						<img src="assets/img/circe11.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Fifth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Twelve -->
-					<div class="carousel-item">
-						<img src="assets/img/circe12.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Sixth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Thirteen -->
-					<div class="carousel-item">
-						<img src="assets/img/circe13.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Sixth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-				</div>
-				<a
-					class="carousel-control-prev"
-					href="#carouselIndicators"
-					role="button"
-					data-slide="prev"
-				>
-					<i class="fas fa-angle-left fa-2x"></i>
-				</a>
-				<a
-					class="carousel-control-next"
-					href="#carouselIndicators"
-					role="button"
-					data-slide="next"
-				>
-					<i class="fas fa-angle-right fa-2x"></i>
-				</a>
-			</div>
-		</section>
-		<!-- Intro -->
-		<div class="intro-container">
-			<div class="container intro-section text-center" id="intro">
-				<div class="row">
-					<div class="col-lg-8 mx-auto">
-						<h2 class="text-white mb-4">famished</h2>
-						<p class="text-white-50">
-							A hungry exploration into narrative as strategy with
-							feminine themes and social issues in food and
-							photography. The idea that strategy is stregthened
-							with long form story elements and capable of
-							creating awareness in hopes for the power of change.
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<!-- bell carousel -->
-		<section class="carousel">
-			<div
-				id="bellCarouselIndicators"
-				class="carousel slide"
-				data-ride="carousel"
-				data-interval="4000"
-				data-pause="hover"
-			>
-				<div class="carousel-inner" role="listbox">
-					<!-- Slide One -->
-					<div class="carousel-item active">
-						<img src="assets/img/bell1.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">First Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Two -->
-					<div class="carousel-item">
-						<img src="assets/img/bell2.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Second Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Three -->
-					<div class="carousel-item">
-						<img src="assets/img/bell3.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Third Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Four -->
-					<div class="carousel-item">
-						<img src="assets/img/bell4.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Fourth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Five -->
-					<div class="carousel-item">
-						<img src="assets/img/bell5.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Fifth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Six -->
-					<div class="carousel-item">
-						<img src="assets/img/bell6.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Sixth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Seven -->
-					<div class="carousel-item">
-						<img src="assets/img/bell7.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">First Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Eight -->
-					<div class="carousel-item">
-						<img src="assets/img/bell8.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Second Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Nine -->
-					<div class="carousel-item">
-						<img src="assets/img/bell9.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Third Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-					<!-- Slide Ten -->
-					<div class="carousel-item">
-						<img src="assets/img/bell10.jpg" alt="" />
-						<div class="carousel-caption d-none d-md-block">
-							<!-- <h2 class="display-4">Fourth Slide</h2> -->
-							<!-- <p class="lead">description</p> -->
-						</div>
-					</div>
-				</div>
-				<a
-					class="carousel-control-prev"
-					href="#bellCarouselIndicators"
-					role="button"
-					data-slide="prev"
-				>
-					<i class="fas bell-icon fa-angle-left fa-2x"></i>
-				</a>
-				<a
-					class="carousel-control-next"
-					href="#bellCarouselIndicators"
-					role="button"
-					data-slide="next"
-				>
-					<i class="fas bell-icon fa-angle-right fa-2x"></i>
-				</a>
-			</div>
-		</section>
-		<!-- Process-->
-		<section class="process-section bg-light" id="process">
-			<div class="container">
-				<div class="row">
-					<div class=".col-xl-12 mx-auto">
-						<h4>Process</h4>
-						<p class="text-black-50">
-							This project is a study in understanding the power
-							of food and narrative through a series in
-							photography. I approached my photography in a way
-							that did more than capture products for quick visual
-							payoffs to garner clicks to buy. My end goal was to
-							create a message that’s more emotive and suggestive
-							by connecting to the media consumer in subtle ways.
-						</p>
-						<p class="text-black-50">
-							I am a Designer and Photographer with an interest in
-							strategy and a love of story. I work in a
-							fast-paced, data, sales, and results-oriented
-							environment with tight deadlines. The industry gives
-							little time to using stories in a strategic sense
-							that has layered complexity. I believe a more
-							creative use of strategy has enormous room for
-							growth. This project explores storytelling through
-							design and photography with layered complexity while
-							using elements of strategy.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Process-->
-		<section class="process-section bg-light">
-			<div class="container">
-				<!-- Featured Project Row-->
-				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-					<div class="col-xl-8 col-lg-7">
-						<img
-							class="img-fluid mb-3 mb-lg-0"
-							src="assets/img/currentwork.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="col-xl-4 col-lg-5">
-						<div class="featured-text text-center text-lg-left">
-							<h4>Current Work</h4>
-							<p class="text-black-50 mb-0">
-								These are examples of the everyday work I do
-								with photography and food.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class=".col-xl-12 mx-auto">
-						<p class="text-black-50">
-							As evidenced by the sudden growth of long-form
-							serial narrative in television's new Golden age and
-							the interconnectedness of movie franchises, media
-							consumers have an increased thirst for deeper
-							narrative tones. With layered cues and easter eggs
-							used to tell larger story arcs society is coming to
-							expect more from media and the stories that are
-							told. Food is at the heart of many of these stories
-							and can carry themes and nuance well. It can be
-							complex, layered, evocative, and beautiful. It is
-							also an elemental human need and experience.
-							<br />
-							<br />
-							I see longer-form storytelling elements as a
-							stronger form of strategy with community resonance
-							and creating conversation. It can be a means to get
-							people invested and cultivate awareness through
-							these stories. It can be used to promote
-							conversations of historic and contemporary issues of
-							difference with empathy, and even help support an
-							acceptance of difference. By making these a part of
-							design through the use of layered storytelling and
-							strategy they could be available in people’s
-							everyday lives and for this reason, we need a
-							variety of approaches. This takes an idea of social
-							issues and presents it to people not always touched
-							by these social issues themselves but begin by
-							noticing and looking.
-							<br />
-							<br />
-						</p>
-						<p class="text-black-50">
-							A successful medium in encompassing these approaches
-							is film. It is a cornerstone of storytelling with a
-							rich history in visual vocabulary. Using that as
-							inspiration I began with a study of my favorite food
-							scenes and how they communicate through food, color,
-							and composition. To give some examples, I looked at
-							Rocky and his breakfast of champions’ raw eggs in a
-							glass. The Breakfast Club’s Saturday detention lunch
-							depicting class and lifestyle. And the racism of
-							Sal’s pizzeria and the food economy of the
-							neighborhood in “Do the Right Thing”.
-							<br />
-							<br />
-						</p>
-						<!-- Process-->
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<!-- Featured Project Row-->
-				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-					<div class="col-xl-8 col-lg-7">
-						<img
-							class="img-fluid mb-3 mb-lg-0"
-							src="assets/img/food_film.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="col-xl-4 col-lg-5">
-						<div class="featured-text text-center text-lg-left">
-							<h4>Film</h4>
-							<p class="text-black-50 mb-0">
-								Food + film in
-								<i>Do The Right Thing</i>, <i>Rocky</i>, and
-								<i> The Breakfast Club</i>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Process-->
-		<section class="process-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class=".col-xl-12 mx-auto">
-						<p class="text-black-50">
-							Taking cues from food, film and it’s deconstruction,
-							I moved forward with two dining excerpts from books.
-							I chose Sylvia Plath’s
-							<i>The Bell Jar</i> and Madeline Miller’s
-							<i>Circe</i> for the feminist and femme-identifying
-							themes they both carry. I have always had an
-							interest in these themes as social issues and their
-							evolution from the past to the present.
-						</p>
-						<p class="text-black-50">
-							I dug into the books, deconstructing the overarching
-							themes, and creating the food scenes and sets with
-							them. I researched scholarly and pop culture
-							articles online and read adjacent materials.
+		<!--  END HEADER  -->
 
-							<br />
-							<a
-								href="https://docs.google.com/document/d/1B7l4xAaMBnBll7Uj4DZ7HRXegiIPgn1gQpFtvdNyf04/edit?usp=sharing"
-								>A link to research can be found here.</a
-							>
-							<br />
-							<br />
-						</p>
-					</div>
+		<!--  START HERO  -->
+		
+		<section class="hero min-height-100vh flex items-center" style="background-image: url(assets/img/hero1.jpg);">
+			<div class="container max-width-adaptive-sm bg-contrast-lower bg-opacity-30%">
+			  <div class="text-center">
+				<div class="text-component margin-bottom-sm">
+				  <h1>Garden Center and Greenhouse serving the local community</h1>
+				  <p>December 4-9: 30% off Garden Gifts</p>
 				</div>
+			  </div>
 			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class=".col-xl-12 mx-auto">
-						<h4>
-							Themes for
-							<i>The Bell Jar</i>
-						</h4>
-						<p class="text-black-50">
-							I focused on the suffocation of social identities
-							and the constraints they create. To be accepted and
-							succeed, one must become homogeneous to specific
-							mandates of identity. As in
-							<i>The Bell Jar</i>, even though it appeared as
-							though there were two possibilities presented,
-							career and domesticity, the only choice was the
-							perpetuation of motherhood. There are many metaphors
-							in the Bell Jar relating to the consequences of
-							indulging in independence and freedom. To quickly
-							set the stage, Esther Greenwood, the principal
-							character is being hosted at a glamorous lunch by
-							Ladies Day magazine along with her fellow interns.
-							<br />
-							<br />
-							I wrote a thematic brief to keep the work focused
-							and look back to as a reference point.
-							<br />
-							<br />
-							<b
-								>Young female interns are wined and dined at the
-								Ladies’ Day Magazine luncheon with rich decadent
-								foods like avocados stuffed with crabmeat salad
-								and chicken slathered with caviar. After this
-								indulgent and performative lunch, they all get
-								devastating food poisoning. Referring to the
-								feminine theme that glamour and gluttony are
-								dark rewards for repression and conformity.
-								Repression in this book also takes the form of
-								self-destructive acts. The characters relieve
-								their shadow sides with parties of “wild and
-								abandon” and are later punished for it. Running
-								from the perfectionism it takes to conform and
-								succeed takes dark turns.</b
-							>
-							<br />
-							<br />
-							With this theme in mind, I created a moodboard to
-							guide the shoot.
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<!-- Featured Project Row-->
-				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-					<div class="col-xl-8 col-lg-7">
-						<img
-							class="img-fluid mb-3 mb-lg-0"
-							src="assets/img/belljar_mood.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="col-xl-4 col-lg-5">
-						<div class="featured-text text-center text-lg-left">
-							<h4>Mood</h4>
-							<p class="text-black-50 mb-0">
-								Flowers can represent reproduction or decay,
-								purity or promiscuity, and ideas of beauty—or
-								nothing more than a pile of petals. All of these
-								are present in
-								<i>The Bell Jar</i> . The spring green
-								reiterates these ideas and symbolizes youth. The
-								type is delicate and sophisticated with twists.
-								The flash creates deep shadows symbolic of
-								repression.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class=".col-xl-12 mx-auto">
-						<h4>
-							Themes for
-							<i>Circe</i>
-						</h4>
-						<p class="text-black-50">
-							<i>Circe</i> is a witch taken from an archetypal
-							hero’s journey that’s been a part of our culture as
-							far back as Homer’s Odyssey and brings it into a
-							contemporary feminine framework. The heroine’s
-							journey is told with male perspective. The key idea
-							is how in a masculine ideal based society, one could
-							use the blueprint of work to find a novel way
-							out/through and make peace with the identity of
-							“other”. It is a story of finding pieces of
-							empowerment in an epic feminine journey.
-							<br />
-							<br />
-							<b
-								>A heroine’s journey through a universal male
-								landscape of the Roman myth follows the general
-								leads of feminine constraints. Circe is placed
-								in exile as the rebellious feminine. Yet she
-								uses that space, outside of society, to define
-								her own identity. The witch empowers herself
-								through intention and work. Transformation is
-								not only reflected through external spells of
-								witchcraft for Circe but more powerfully with
-								internal evolution.</b
-							>b>
-							<br />
-							<br />
-							For Circe’s visuals, I reached into the colors of
-							the story and time period. The palette reflects soil
-							and dirt, a timeless organic material and an
-							archetypal ally of feminine power. Vanitas paintings
-							were also an inspiration, they’re “a symbolic work
-							of art showing the transience of life, the futility
-							of pleasure, and the certainty of death” popular in
-							the 16th and 17th century. I chose food that would
-							be available to the Mediterranean region and then
-							explored historical depictions of eating for
-							stylistic inspiration, which I found reliant on
-							freshness and the magical nature of herbs. I used
-							light and shadow to invoke a naturalistic setting.
-							<br />
-							<br />
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<!-- Featured Project Row-->
-				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-					<div class="col-xl-8 col-lg-7">
-						<img
-							class="img-fluid mb-3 mb-lg-0"
-							src="assets/img/circe_mood.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="col-xl-4 col-lg-5">
-						<div class="featured-text text-center text-lg-left">
-							<h4>Mood</h4>
-							<p class="text-black-50 mb-0">
-								Circe derives her power from nature with lots of
-								earth tones. I wanted to be sure to use metal
-								and wood dishes representative of the time and
-								organic materials. Natural light creates shadows
-								and patterns. The domed shape invokes the holy
-								aspects of divinty.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class=".col-xl-12 mx-auto">
-						<h4>Photoshoots</h4>
-						<p class="text-black-50">
-							With defined themes and visual scaffolding, I left
-							the other constraints to thrifting and time. I found
-							wooden dishes and aged metal for Circe. I bought
-							some colored green glass to carry the palette and
-							add variety. For the Bell Jar, I studied table
-							settings of the time and noticed also with working
-							in fine dining for a bit of my life, that traditions
-							don’t change that much. Like fine dining, traditions
-							are only further embedded. So I went with classic
-							white linens to further feature the food and its
-							decadence. I found plates with gold edging and
-							jadeite side plates to echo the greens. The wine
-							glasses and glass were chosen to create added
-							dimension in the shadows.
-							<br />
-							<br />
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<!-- Featured Project Row-->
-				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-					<div class="col-xl-8 col-lg-7">
-						<img
-							class="img-fluid mb-3 mb-lg-0"
-							src="assets/img/thrift_dish_box.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="col-xl-4 col-lg-5">
-						<div class="featured-text text-center text-lg-left">
-							<h4>Thrifted Dishes</h4>
-							<p class="text-black-50 mb-0">One shop box</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<!-- Featured Project Row-->
-				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-					<div class="col-xl-8 col-lg-7">
-						<img
-							class="img-fluid mb-3 mb-lg-0"
-							src="assets/img/circe_thrift_dish.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="col-xl-4 col-lg-5">
-						<div class="featured-text text-center text-lg-left">
-							<h4>Circe's dish set</h4>
-							<p class="text-black-50 mb-0">
-								Aged metal and wood
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Process-Center-->
-		<section class="process-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class=".col-xl-12 mx-auto">
-						<p class="text-black-50">
-							With props and food purchased, I worked from loosely
-							outlined storyboards and an anticipation of
-							unfolding in process. Solo photoshoots can be
-							cumbersome and precarious especially when working
-							with food. I had a hodgepodge of tables arranged on
-							the sidelines holding extra props, boxes of food and
-							rolls of paper towels along with extra utensils for
-							styling.
+		  </section>
 
-							<br />
-							<br />
+		<!--  END HERO  -->
 
-							Circe’s feast was on a long folding banquet table in
-							front of my garage with the background held in place
-							using tall boards. I set the table in line with the
-							light and shadow underneath the trees as I hopped
-							over lily beds. Bees and flies rested on the fruit
-							every now and then. It was a full day. The spell
-							work shoot that proceeds the feast was shot during
-							the golden hour of the evening on the autumnal
-							equinox. The light was breathtaking but moved
-							quickly and made for a rapid timeline.
-							<br />
-							<br />
-						</p>
+		<!--  START FEATURE  -->
+		
+		<section class="position-relative margin-0 bg-accent-lighter">
+			<div class="container max-width-100%">
+			  <div class="grid">
+				<div class="bg-accent-lighter flex items-center col-6@md">
+				  <div class="padding-md padding-x-lg@lg padding-y-xxl@lg">
+					<div class="text-component">
+					  <h1>Wholesale</h1>
+					  <p>With over 900 varieties of plants, 1,100 patents, 25 brokers and an infrastructure to ship around the country our Wholesale is awesome!</p>
 					</div>
+			  
+					<div class="margin-top-sm">
+					  <div class="flex flex-wrap gap-sm items-center">
+						<a href="#0" class="color-inherit">Learn more</a>
+					  </div>
+					</div>
+				  </div>
 				</div>
+		  
+				<img class="block width-100% object-cover col-6@md" src="assets/img/plant3.jpg" alt="Image description">
+			  </div>
 			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<!-- Featured Project Row-->
-				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-					<div class="col-xl-8 col-lg-7">
-						<img
-							class="img-fluid mb-3 mb-lg-0"
-							src="assets/img/process-3.jpg"
-							alt=""
-						/>
+			<div class="container max-width-100%">
+			  <div class="grid">
+				<div class="bg-accent-lighter flex items-center col-6@md order-2@md">
+				  <div class="padding-md padding-x-lg@lg padding-y-xxl@lg">
+					<div class="text-component">
+					  <h1>Retail</h1>
+					  <p>We root over 1,300 varieties of plants which are brought in from around the world, producing over five million plants for you to choose from.</p>
 					</div>
-					<div class="col-xl-4 col-lg-5">
-						<div class="featured-text text-center text-lg-left">
-							<h4>Circe Behind The Scenes</h4>
-							<p class="text-black-50 mb-0">
-								Behind the scenes with my son eating the set
-							</p>
-						</div>
+			  
+					<div class="margin-top-sm">
+					  <div class="flex flex-wrap gap-sm items-center">
+						<a href="#0" class="color-inherit">Learn more</a>
+					  </div>
 					</div>
+				  </div>
 				</div>
+		  
+				<img class="block width-100% object-cover col-6@md order-1@md" src="assets/img/plant2.jpg" alt="Image description">
+			  </div>
 			</div>
-		</section>
-		<!-- Process-Center-->
-		<section class="process-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class=".col-xl-12 mx-auto">
-						<p class="text-black-50">
-							The Bell Jar was shot in my living room in front of
-							a picture window with a strobe and a speed light. I
-							asked my family to provide a constant clear runway
-							from the living room to the kitchen. This was much
-							harder than the other shoot because my sweet
-							children flocked around - talking and talking and
-							asking questions. The pandemic continues to create
-							resourceful working solutions. Since I have little
-							access to people, the few shots I wanted with hands
-							used a tripod and a remote button with help to
-							focus.
-							<br />
-							<br />
-							After the photo shoots and subsequent editing, I
-							reached out to several reviewers for feedback. All
-							had some tie to photography and or design. The
-							reviews were helpful, forcing me to reevaluate some
-							decisions I had made, reinforcing others, and
-							broaching questions with myself about the project.
-							<br />
-							<br />
-							Some of the most resonant self-generated questions
-							from the incoming feedback were: What are universal
-							elements and how are they defined? Is this an
-							assumption of homogeneous culture? Can one distill
-							abstraction into a loose formula? What gives it
-							authority and consistency? How can you clearly
-							communicate what you want the viewer to take away
-							without being explicit? How can I embed emotions in
-							the visual? How can I structure a story and execute
-							it as a strategy? Are the narratives broadly
-							accessible? How can I plan to benefit from another’s
-							experience? Are there ways to plan rather than
-							intend in more complex story structures? Are there
-							formulas to convey narratives outside of tropes and
-							universal heroes? How can we create fresh voices and
-							build on them?
-							<br />
-							<br />
-							While some of my classmates’ had user tests, I began
-							to implement the same concept for feedback. I
-							planned a question control sheet to guide the
-							interviews and better answer the questions I was
-							generating. Some of the questions included were:
-							<br />Do the ideas resonate? <br />Are they clear?
-							<br />Do the photos depict the themes? <br />What
-							would make this more accessible? <br />What is a
-							qusetion I should be asking?
-							<br />
-							<br />
-						</p>
-					</div>
-				</div>
-			</div>
-		</section>
-		<section class="process-section bg-light">
-			<div class="container">
-				<!-- Featured Project Row-->
-				<div class="row align-items-center no-gutters mb-4 mb-lg-5">
-					<div class="col-xl-8 col-lg-7">
-						<img
-							class="img-fluid mb-3 mb-lg-0"
-							src="assets/img/circe_feast.jpg"
-							alt=""
-						/>
-					</div>
-					<div class="col-xl-4 col-lg-5">
-						<div class="featured-text text-center text-lg-left">
-							<h4>An Intent of Imperfection</h4>
-							<p class="text-black-50 mb-0">
-								Some of the feedback included the distraction of
-								lines in the background. The folds in the
-								fabrics were to provide a human element amongst
-								the perfection of the food with an added
-								interest of texture.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Process-Center-->
-		<section class="process-section bg-light">
-			<div class="container">
-				<div class="row">
-					<div class=".col-xl-12 mx-auto">
-						<p class="text-black-50">
-							The biggest impact on my project based on the
-							interviews was feedback from a book designer. A
-							significant portion of the interview delved into the
-							conceptual aspects of the project revolved around
-							history and intention. The parts of the discussion
-							which dealt with the tangible design had to do with
-							typographical communication and layout. Based upon
-							these insights I took apart a lot of the layouts to
-							simplify them. My intent had been to capture
-							attention initially with an arresting title page
-							layout. We decided they had been too distracting,
-							and the payoff wasn’t fair. She really helped
-							solidify my decisions and why I was making them.
-							<br />
-							<br />
-							With the steady support of my teacher and my
-							classmates, I was able to get back on track when the
-							momentum was lost in the questions. I think the
-							questions were a very important part of growing my
-							work even though at times they were cause for
-							paralysis. In the future, with bigger creative
-							projects, I will have a written "spine" as Twyla
-							Tharp calls it. A place to continually return to
-							when comparing and contrasting new developments in
-							my process. A written piece that provides a stronger
-							cornerstone of intent. I had this with the written
-							themes that I refered back to but next time I may
-							try for more simple and direct backbone.
-							<br />
-							<br />
-							Working with this project and process taught me so
-							much. Even though it is my ambition to eventually
-							speak well to a wide audience, I may have to start
-							with smaller focused groups first. Gathering for a
-							wide reaching narrative is casting too wide a net.
-							Understanding value in a smaller community first and
-							the conversation it generates would push the work
-							more poignantly. I do think there are some answers
-							for speaking to a broader audience with basic human
-							tropes. But the development comes in the nuance.
-							This has been a big process building experience for
-							me. I understand better how to add guardrails to my
-							work and decipher if something is an effective
-							detour. I plan to evolve ideas of narrative strategy
-							through more process and work.
-						</p>
-						<br />
-						<br />
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- Footer-->
-		<footer class="footer bg-black small text-center text-white-50">
-			<div class="container">Copyright © famished 2020</div>
-		</footer>
-		<!-- Bootstrap core JS-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js"></script>
-		<!-- Third party plugin JS-->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
-		<!-- Core theme JS-->
-		<script src="js/scripts.js"></script>
+		  </section>
+		
+		<!--  END FEATURE  -->
+
+		<footer class="main-footer padding-y-lg border-top border-black">
+  <div class="container max-width-100%">
+    <div class="grid gap-lg">
+      
+      <nav id="locations" class="col-12@lg order-1@lg">
+        <ul class="grid gap-lg">
+          <li class="col-6@xs col-3@md">
+            <h4 class="text-base@md">Blaine</h4>
+            <ul class="grid text-sm@md">
+              <li>2456 125th Ave. NE</li>
+              <li>Blaine, MN 55449</li>
+              <li>Tel.: 763-746-0580</li>
+              <li>Fax: 763-746-0584</li>
+            </ul>
+          </li>
+          <li class="col-6@xs col-3@md">
+            <h4 class="text-base@md">Rogers</h4>
+            <ul class="grid text-sm@md">
+              <li>Growing Facility & Offices</li>
+              <li>20045 County Road 81</li>
+              <li>Rogers, MN 55311</li>
+              <li>Tel.: (763)428-2061</li>
+              <li>Fax: (763)428-8408</li>
+            </ul>
+          </li>
+          <li class="col-6@xs col-3@md">
+            <h4 class="text-base@md">Hours</h4>
+            <ul class="grid text-sm@md">
+              <li>Mon - Fri 10-7</li>
+              <li>Sat. 9-6</li>
+              <li>Sun 9-6</li>
+              <li>malmborgs@geraniumsbygeorge.com</li>
+            </ul>
+          </li>
+<div class="main-footer__colophon border-top padding-top-xs margin-top-lg">
+      <div class="text-sm text-xs@md color-contrast-medium flex flex-wrap gap-xs">
+        <span>&copy; Malmborgs Gardent Center &amp; Greenhouse</span>
+      </div>
+
+      <div class="flex items-center gap-xs">
+        <a href="#0" class="main-footer__social">
+          <svg class="icon block" viewBox="0 0 16 16"><title>Follow us on Twitter</title><g><path d="M16,3c-0.6,0.3-1.2,0.4-1.9,0.5c0.7-0.4,1.2-1,1.4-1.8c-0.6,0.4-1.3,0.6-2.1,0.8c-0.6-0.6-1.5-1-2.4-1 C9.3,1.5,7.8,3,7.8,4.8c0,0.3,0,0.5,0.1,0.7C5.2,5.4,2.7,4.1,1.1,2.1c-0.3,0.5-0.4,1-0.4,1.7c0,1.1,0.6,2.1,1.5,2.7 c-0.5,0-1-0.2-1.5-0.4c0,0,0,0,0,0c0,1.6,1.1,2.9,2.6,3.2C3,9.4,2.7,9.4,2.4,9.4c-0.2,0-0.4,0-0.6-0.1c0.4,1.3,1.6,2.3,3.1,2.3 c-1.1,0.9-2.5,1.4-4.1,1.4c-0.3,0-0.5,0-0.8,0c1.5,0.9,3.2,1.5,5,1.5c6,0,9.3-5,9.3-9.3c0-0.1,0-0.3,0-0.4C15,4.3,15.6,3.7,16,3z"></path></g></svg>
+        </a>
+
+        <a href="#0" class="main-footer__social">
+          <svg class="icon block" viewBox="0 0 16 16"><title>Follow us on Youtube</title><g><path d="M15.8,4.8c-0.2-1.3-0.8-2.2-2.2-2.4C11.4,2,8,2,8,2S4.6,2,2.4,2.4C1,2.6,0.3,3.5,0.2,4.8C0,6.1,0,8,0,8 s0,1.9,0.2,3.2c0.2,1.3,0.8,2.2,2.2,2.4C4.6,14,8,14,8,14s3.4,0,5.6-0.4c1.4-0.3,2-1.1,2.2-2.4C16,9.9,16,8,16,8S16,6.1,15.8,4.8z M6,11V5l5,3L6,11z"></path></g></svg>
+        </a>
+
+        <a href="#0" class="main-footer__social">
+          <svg class="icon block" viewBox="0 0 16 16"><title>Follow us on Github</title><g><path  d="M8,0.2c-4.4,0-8,3.6-8,8c0,3.5,2.3,6.5,5.5,7.6 C5.9,15.9,6,15.6,6,15.4c0-0.2,0-0.7,0-1.4C3.8,14.5,3.3,13,3.3,13c-0.4-0.9-0.9-1.2-0.9-1.2c-0.7-0.5,0.1-0.5,0.1-0.5 c0.8,0.1,1.2,0.8,1.2,0.8C4.4,13.4,5.6,13,6,12.8c0.1-0.5,0.3-0.9,0.5-1.1c-1.8-0.2-3.6-0.9-3.6-4c0-0.9,0.3-1.6,0.8-2.1 c-0.1-0.2-0.4-1,0.1-2.1c0,0,0.7-0.2,2.2,0.8c0.6-0.2,1.3-0.3,2-0.3c0.7,0,1.4,0.1,2,0.3c1.5-1,2.2-0.8,2.2-0.8 c0.4,1.1,0.2,1.9,0.1,2.1c0.5,0.6,0.8,1.3,0.8,2.1c0,3.1-1.9,3.7-3.7,3.9C9.7,12,10,12.5,10,13.2c0,1.1,0,1.9,0,2.2 c0,0.2,0.1,0.5,0.6,0.4c3.2-1.1,5.5-4.1,5.5-7.6C16,3.8,12.4,0.2,8,0.2z"></path></g></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+		<script src="assets/js/scripts.js"></script>
 	</body>
 </html>
